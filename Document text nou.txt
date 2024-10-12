@@ -1,0 +1,18 @@
+import React from 'react';
+import Navbar from '../complex/NavBar';
+import '../../styling/NavBar.css';
+import '../../styling/Home.css';
+import { useState } from 'react';
+
+
+const Home = () => {
+  const [selectedLanguage, setLanguage] = useState('en');
+  const [selectedCurrency, setCurrency] = useState('USD');
+  return (
+
+    <div className='home-page'>
+      
+      <Navbar selectedLanguage={selectedLanguage}
+        setLanguage={setLanguage}
+        selectedCurrency={selectedCurrency}
+        setC
